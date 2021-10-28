@@ -14,7 +14,7 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
   background: var(--primary);
 }
 
@@ -23,17 +23,19 @@ body {
   left: 20px;
   top: 20px;
   flex-flow: column nowrap;
+  border: 8px solid white;
+  box-shadow: 10px 5px 5px #ddd;
+
 }
 
 #navbar > header {
   background-color: var(--secondary);
   color: #ffffff;
-  font-size: 2.8rem;
-  padding: 0.5em;
-  
+  font-size: 3rem;
+  padding: 0.7em;
   width: 100%;
   text-align: center;
-  box-shadow: 10px 5px 5px #ddd; 
+
 }
 
 .nav-link {
@@ -46,8 +48,10 @@ body {
   text-decoration: none;
   transition: all 0.1s ease;
   border-bottom: 1px dotted #ddd ;
-  box-shadow: 10px 5px 5px #ddd;
 
+}
+.nav-link:last-child{
+  padding-bottom: 30px;
 }
 
 .nav-link:hover {
@@ -130,12 +134,12 @@ code {
       flex-flow: row nowrap;
   }
 
-  .navbar {
+  #navbar {
       position: fixed;
       width: 20%;
   }
   
-  .main-doc {
+  #main-doc {
       margin-left: 23%;
 
       width: 80%;
